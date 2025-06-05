@@ -7,7 +7,7 @@ function App() {
     <>
     <FavoritesProvider>
       <AppRoutes />
-      </FavoritesProvider>
+    </FavoritesProvider>
     </>
   );
 }
