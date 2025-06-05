@@ -32,11 +32,13 @@ const ItemCard = ({ item }) => {
         Ver detalhes
       </Link>
 
-      {/* Botão de favorito */}
+      {/* Botão de favorito com contraste e clareza */}
       <button
         onClick={() => toggleFavorite(item)}
-        className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 ${
-          isFavorite ? 'bg-red-500 text-white' : 'bg-gray-300 text-gray-800'
+        className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 tracking-wide ${
+          isFavorite
+            ? 'bg-red-600 text-gray hover:bg-red-700'
+            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
         }`}
       >
         {isFavorite ? '❤️ Remover dos Favoritos' : '🤍 Adicionar aos Favoritos'}
