@@ -1,15 +1,16 @@
-import "./App.css";
-import { FavoritesProvider } from "./contexts/FavoritesContext";
-import AppRoutes from "./routes/AppRoutes";
+import { FavoritesProvider } from './contexts/FavoritesContext';
+import AppRoutes from './routes/AppRoutes';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <>
     <FavoritesProvider>
-      <AppRoutes />
+      <Navbar />
+      <div className="pt-20">
+        <AppRoutes />
+      </div>
     </FavoritesProvider>
-    </>
   );
-}
+};
 
 export default App;
